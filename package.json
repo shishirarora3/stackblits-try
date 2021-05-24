@@ -1,9 +1,16 @@
 {
   "name": "node-starter",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
+    "html-webpack-plugin": "5.3.1",
+    "micro": "9.3.4",
+    "webpack": "5.37.1",
+    "webpack-cli": "4.7.0",
+    "webpack-dev-server": "3.11.2"
   },
   "scripts": {
+    "start": "yarn webpack-server",
+    "webpack-server": "webpack serve --mode development"
   }
 }
