@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=document.createElement("button");t.innerText="get mails",t.onclick=()=>{fetch("https://outlook-sdf.office.com/owa/service.svc?action=GetItem&app=Mail&n=27").then(console.log)};const e=t;document.body.append(e)})();

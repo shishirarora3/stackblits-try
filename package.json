@@ -3,14 +3,19 @@
   "version": "0.0.0",
   "private": false,
   "dependencies": {
+    "global": "^4.4.0",
     "html-webpack-plugin": "5.3.1",
     "micro": "9.3.4",
+    "serve": "^11.3.2",
     "webpack": "5.37.1",
     "webpack-cli": "4.7.0",
     "webpack-dev-server": "3.11.2"
   },
   "scripts": {
     "start": "yarn webpack-server",
-    "webpack-server": "webpack serve --mode development"
+    "webpack-server": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "serve": "serve ./dist -l 8080",
+    "debug": "node --inspect ./src/api.js"
   }
 }
